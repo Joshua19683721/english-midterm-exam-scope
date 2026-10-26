@@ -532,7 +532,8 @@
     html += '<li>時間題記住：整點 <b>o\'clock</b>' + sayBtn("o'clock") + '、半點 <b>thirty</b>' + sayBtn("thirty") + '。</li>';
     html += '<li>拼字注意 silent e 與雙寫字母：<b>blackboard</b>' + sayBtn("blackboard") + '、<b>butterfly</b>' + sayBtn("butterfly") + '、<b>eighteen</b>' + sayBtn("eighteen") + '。</li>';
     html += '<li>閱讀題先看題目，再回短文找答案。</li>';
-    html += '<li>萬聖節歌詞單字：<b>trick or treat</b>' + sayBtn("trick or treat") + '、<b>apples</b>' + sayBtn("apples") + '、<b>peaches</b>' + sayBtn("peaches") + '、<b>tangerines</b>' + sayBtn("tangerines") + '、<b>cookies</b>' + sayBtn("cookies") + '、<b>chocolate</b>' + sayBtn("chocolate") + '、<b>jelly beans</b>' + sayBtn("jelly beans") + '。</li>';
+    html += '<li>萬聖節歌詞水果：<b>apples</b>' + sayBtn("apples") + '、<b>peaches</b>' + sayBtn("peaches") + '、<b>tangerines</b>' + sayBtn("tangerines") + '、<b>lemons</b>' + sayBtn("lemons") + '、<b>grapefruits</b>' + sayBtn("grapefruits") + '、<b>limes</b>' + sayBtn("limes") + '。</li>';
+    html += '<li>萬聖節歌詞其他單字：<b>trick or treat</b>' + sayBtn("trick or treat") + '、<b>sour</b>' + sayBtn("sour") + '、<b>cookies</b>' + sayBtn("cookies") + '、<b>chocolate</b>' + sayBtn("chocolate") + '、<b>jelly beans</b>' + sayBtn("jelly beans") + '。</li>';
     html += '</ul></div>';
     html += '</div>';
 
@@ -834,13 +835,17 @@
         "Trick or treat, trick or treat,",
         "Give me something sweet to eat.",
         "Cookies, chocolate, jelly beans,",
-        "Happy Halloween!"
+        "Happy Halloween!",
+        "Trick or treat? Trick or treat?",
+        "Give me something sour to eat.",
+        "Lemons, grapefruits, limes so green.",
+        "Happy Happy Halloween."
       ];
       var fullSong = songLines.join(" ");
       var lyricHtml = "";
       songLines.forEach(function (line, i) {
         lyricHtml += esc(line) + sayBtn(line, "inline");
-        if (i === 3) lyricHtml += "<br><br>";
+        if (i === 3 || i === 7) lyricHtml += "<br><br>";
         else if (i < songLines.length - 1) lyricHtml += "<br>";
       });
       html += '<div class="lyricbox">' +

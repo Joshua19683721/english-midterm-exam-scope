@@ -99,8 +99,8 @@ window.QUIZ_DATA = {
       "en": "Halloween Song",
       "icon": "🎃",
       "pct": "6%",
-      "note": "歌詞有兩段：第一段想要 something good to eat（好吃的東西），第二段想要 something sweet to eat（甜的東西）。注意水果與甜食單字。",
-      "desc": "Trick or Treat 歌詞：水果、甜食、歌詞填空與押韻。",
+      "note": "歌詞有三段：第一段想要 something good to eat（好吃的東西），第二段想要 something sweet to eat（甜的東西），第三段想要 something sour to eat（酸的食物）。注意三段的水果與味道單字。",
+      "desc": "Trick or Treat 歌詞：水果、甜食、酸味水果、歌詞填空與押韻。",
       "count": 16,
       "actualPct": "5%"
     }
@@ -6592,7 +6592,7 @@ window.QUIZ_DATA = {
     {
       "sec": "halloween",
       "type": "mc",
-      "prompt": "Which fruits are in the song?",
+      "prompt": "Which fruits are in the first verse?",
       "options": [
         {
           "text": "Apples, peaches, tangerines."
@@ -6608,30 +6608,30 @@ window.QUIZ_DATA = {
         }
       ],
       "answer": 0,
-      "explain": "歌詞：Apples, peaches, tangerines.（蘋果、桃子、橘子）",
+      "explain": "歌詞第一段：Apples, peaches, tangerines.（蘋果、桃子、橘子）",
       "n": 286,
       "id": "q286"
     },
     {
       "sec": "halloween",
       "type": "mc",
-      "prompt": "Which fruit is NOT in the song?",
+      "prompt": "In the third verse, what do they want to eat?",
       "options": [
         {
-          "text": "Apples"
+          "text": "Something sweet."
         },
         {
-          "text": "Bananas"
+          "text": "Something sour."
         },
         {
-          "text": "Tangerines"
+          "text": "Something cold."
         },
         {
-          "text": "Peaches"
+          "text": "Something hot."
         }
       ],
       "answer": 1,
-      "explain": "歌詞只提到 apples、peaches、tangerines，沒有 bananas。",
+      "explain": "歌詞第三段：Give me something sour to eat. sour＝酸的。",
       "n": 287,
       "id": "q287"
     },
@@ -6707,23 +6707,23 @@ window.QUIZ_DATA = {
     {
       "sec": "halloween",
       "type": "mc",
-      "prompt": "Which one is NOT in the song?",
+      "prompt": "Which sour fruits are in the third verse?",
       "options": [
         {
-          "text": "Pizza"
+          "text": "Lemons, grapefruits, limes."
         },
         {
-          "text": "Cookies"
+          "text": "Apples, peaches, tangerines."
         },
         {
-          "text": "Chocolate"
+          "text": "Cookies, chocolate, jelly beans."
         },
         {
-          "text": "Jelly beans"
+          "text": "Bananas, grapes, oranges."
         }
       ],
       "answer": 0,
-      "explain": "歌詞提到 cookies、chocolate、jelly beans，沒有 pizza。",
+      "explain": "歌詞第三段：Lemons, grapefruits, limes.（檸檬、葡萄柚、青檸）",
       "n": 291,
       "id": "q291"
     },
@@ -6753,23 +6753,23 @@ window.QUIZ_DATA = {
     {
       "sec": "halloween",
       "type": "mc",
-      "prompt": "What do they say at the end of each verse?",
+      "prompt": "What do they say at the end of the song?",
       "options": [
         {
-          "text": "Happy New Year!"
+          "text": "Good morning."
         },
         {
-          "text": "Happy birthday!"
+          "text": "Happy birthday."
         },
         {
-          "text": "Merry Christmas!"
+          "text": "Merry Christmas."
         },
         {
-          "text": "Happy Halloween!"
+          "text": "Happy Happy Halloween."
         }
       ],
       "answer": 3,
-      "explain": "兩段歌詞最後都唱 Happy Halloween!",
+      "explain": "歌詞第三段最後一句：Happy Happy Halloween.",
       "n": 293,
       "id": "q293"
     },
@@ -6822,23 +6822,23 @@ window.QUIZ_DATA = {
     {
       "sec": "halloween",
       "type": "mc",
-      "prompt": "Which word rhymes with \"beans\"?",
+      "prompt": "Which word rhymes with \"green\"?",
       "options": [
         {
-          "text": "apples"
+          "text": "sour"
         },
         {
-          "text": "chocolate"
+          "text": "grapefruits"
         },
         {
-          "text": "cookies"
+          "text": "lemons"
         },
         {
-          "text": "tangerines"
+          "text": "Halloween"
         }
       ],
       "answer": 3,
-      "explain": "beans /biːnz/ 和 tangerines /ˌtændʒəˈriːnz/ 尾音相同，都是 /iːnz/。",
+      "explain": "green /ɡriːn/ 和 Halloween /ˌhæləˈwiːn/ 尾音相同，都是 /iːn/。",
       "n": 296,
       "id": "q296"
     },
@@ -6871,20 +6871,22 @@ window.QUIZ_DATA = {
     {
       "sec": "halloween",
       "type": "write",
-      "prompt": "寫出歌詞中提到的三種水果。",
+      "prompt": "寫出第三段提到的三種水果。",
       "accept": [
-        "apples, peaches, tangerines",
-        "apples peaches tangerines",
-        "apples, peaches and tangerines",
-        "apples peaches and tangerines",
-        "apples, peaches, and tangerines",
-        "apples and peaches and tangerines",
-        "apple, peach, tangerine",
-        "apple peach tangerine",
-        "apple and peach and tangerine"
+        "lemons, grapefruits, limes",
+        "lemons grapefruits limes",
+        "lemons, grapefruits and limes",
+        "lemons grapefruits and limes",
+        "lemons, grapefruits, and limes",
+        "lemons and grapefruits and limes",
+        "lemon, grapefruit, lime",
+        "lemon grapefruit lime",
+        "lemon and grapefruit and lime",
+        "lemons, grapefruits, limes so green",
+        "lemons grapefruits limes so green"
       ],
-      "sample": "apples, peaches, tangerines",
-      "explain": "歌詞水果：apples（蘋果）、peaches（桃子）、tangerines（橘子）。",
+      "sample": "lemons, grapefruits, limes",
+      "explain": "第三段水果：lemons（檸檬）、grapefruits（葡萄柚）、limes（青檸）。",
       "n": 299,
       "id": "q299"
     },
