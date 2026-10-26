@@ -532,7 +532,7 @@
     html += '<li>時間題記住：整點 <b>o\'clock</b>' + sayBtn("o'clock") + '、半點 <b>thirty</b>' + sayBtn("thirty") + '。</li>';
     html += '<li>拼字注意 silent e 與雙寫字母：<b>blackboard</b>' + sayBtn("blackboard") + '、<b>butterfly</b>' + sayBtn("butterfly") + '、<b>eighteen</b>' + sayBtn("eighteen") + '。</li>';
     html += '<li>閱讀題先看題目，再回短文找答案。</li>';
-    html += '<li>萬聖節單字：<b>ghost</b>' + sayBtn("ghost") + '、<b>jack-o\'-lantern</b>' + sayBtn("jack-o'-lantern") + '、<b>mummy</b>' + sayBtn("mummy") + '、<b>vampire</b>' + sayBtn("vampire") + '、<b>witch</b>' + sayBtn("witch") + '。</li>';
+    html += '<li>萬聖節歌詞單字：<b>trick or treat</b>' + sayBtn("trick or treat") + '、<b>apples</b>' + sayBtn("apples") + '、<b>peaches</b>' + sayBtn("peaches") + '、<b>tangerines</b>' + sayBtn("tangerines") + '、<b>cookies</b>' + sayBtn("cookies") + '、<b>chocolate</b>' + sayBtn("chocolate") + '、<b>jelly beans</b>' + sayBtn("jelly beans") + '。</li>';
     html += '</ul></div>';
     html += '</div>';
 
@@ -586,7 +586,7 @@
     html += '<button class="pill ' + (state.autoPlay ? "on" : "") + '" data-act="auto">🔊 自動：' + (state.autoPlay ? "開" : "關") + '</button>';
     html += '<button class="pill ' + (state.sound ? "on" : "") + '" data-act="sound">🔔 音效：' + (state.sound ? "開" : "關") + '</button>';
     html += rateControl("rateQuiz");
-    if (sec.note) html += '<button class="pill" data-act="tips">💡 提示</button>';
+    if (sec.note) html += '<button class="pill" data-act="tips">' + (sec.id === "halloween" ? "🎵 歌詞" : "💡 提示") + '</button>';
     html += '<button class="pill danger" data-act="result">看成績</button>';
     html += '</div></div>';
     html += '<div class="progress"><i style="width:' + pct + '%"></i></div>';
@@ -823,18 +823,30 @@
   function openTips() {
     var q = current();
     var sec = section(q ? q.sec : state.sec);
-    var html = '<h2>' + sec.icon + ' ' + esc(sec.name) + ' · 小提示</h2>';
+    var html = '<h2>' + sec.icon + ' ' + esc(sec.name) + ' · ' + (sec.id === "halloween" ? "歌詞" : "小提示") + '</h2>';
     html += '<p>' + esc(sec.note).replace(/\n/g, "<br>") + '</p>';
     if (sec.id === "halloween") {
-      html += '<p class="en" style="background:#fff8ef;border:1px solid #f3e3cd;border-radius:12px;padding:12px 14px;line-height:1.95">' +
-        'Knock knock, trick or treat?' + sayBtn("Knock knock, trick or treat?") + '<br>' +
-        'Who are you?' + sayBtn("Who are you?") + '<br>' +
-        'I\'m a ghost. I\'m a little ghost.' + sayBtn("I'm a ghost. I'm a little ghost.") + '<br>' +
-        'I\'m a witch. I\'m a little witch.' + sayBtn("I'm a witch. I'm a little witch.") + '<br>' +
-        'I\'m a mummy. I\'m a little mummy.' + sayBtn("I'm a mummy. I'm a little mummy.") + '<br>' +
-        'I\'m a vampire. I\'m a little vampire.' + sayBtn("I'm a vampire. I'm a little vampire.") + '<br>' +
-        'Happy Halloween! Happy Halloween!' + sayBtn("Happy Halloween! Happy Halloween!") +
-        '</p>';
+      var songLines = [
+        "Trick or treat, trick or treat,",
+        "Give me something good to eat.",
+        "Apples, peaches, tangerines,",
+        "Happy Halloween!",
+        "Trick or treat, trick or treat,",
+        "Give me something sweet to eat.",
+        "Cookies, chocolate, jelly beans,",
+        "Happy Halloween!"
+      ];
+      var fullSong = songLines.join(" ");
+      var lyricHtml = "";
+      songLines.forEach(function (line, i) {
+        lyricHtml += esc(line) + sayBtn(line, "inline");
+        if (i === 3) lyricHtml += "<br><br>";
+        else if (i < songLines.length - 1) lyricHtml += "<br>";
+      });
+      html += '<div class="lyricbox">' +
+        '<div class="lyrichead">🎵 Trick or Treat' +
+        '<span class="saybtn wide" role="button" tabindex="0" data-act="say" data-say="' + esc(fullSong) + '">🔊 整首</span>' +
+        '</div><p class="en">' + lyricHtml + '</p></div>';
     }
     html += '<p style="font-size:12.5px;color:#6c7d79">官方配分：' + sec.pct + '・本卷 ' + sec.count + ' 題</p>';
     html += '<div class="close"><button class="btn primary" data-act="closemodal">知道了</button></div>';
@@ -978,7 +990,26 @@
   });
 
   modal.addEventListener("click", function (e) {
+    var el = e.target.closest ? e.target.closest("[data-act]") : null;
+    if (el) {
+      var act = el.getAttribute("data-act");
+      if (act === "say") {
+        e.preventDefault();
+        e.stopPropagation();
+        speak(el.getAttribute("data-say"), el);
+        return;
+      }
+      if (act === "closemodal") { closeModal(); return; }
+    }
     if (e.target === modal) closeModal();
+  });
+  modal.addEventListener("keydown", function (e) {
+    var el = e.target && e.target.closest ? e.target.closest('[data-act="say"]') : null;
+    if (el && (e.key === "Enter" || e.key === " ")) {
+      e.preventDefault();
+      e.stopPropagation();
+      speak(el.getAttribute("data-say"), el);
+    }
   });
   document.addEventListener("keydown", function (e) {
     if (e.key === "Escape") closeModal();

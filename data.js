@@ -99,8 +99,8 @@ window.QUIZ_DATA = {
       "en": "Halloween Song",
       "icon": "🎃",
       "pct": "6%",
-      "note": "Knock knock, trick or treat? Who are you? I'm a ghost. I'm a little ghost. ... Happy Halloween!",
-      "desc": "萬聖節歌曲 Trick or Treat 的歌詞與單字選擇題。",
+      "note": "歌詞有兩段：第一段想要 something good to eat（好吃的東西），第二段想要 something sweet to eat（甜的東西）。注意水果與甜食單字。",
+      "desc": "Trick or Treat 歌詞：水果、甜食、歌詞填空與押韻。",
       "count": 16,
       "actualPct": "5%"
     }
@@ -6569,140 +6569,209 @@ window.QUIZ_DATA = {
     {
       "sec": "halloween",
       "type": "mc",
-      "prompt": "\"Knock knock, trick or treat? ______ are you?\"",
+      "prompt": "\"Trick or treat, trick or treat, give me something good to ______.\"",
       "options": [
         {
-          "text": "What"
+          "text": "drink"
         },
         {
-          "text": "Where"
+          "text": "read"
         },
         {
-          "text": "How"
+          "text": "play"
         },
         {
-          "text": "Who"
+          "text": "eat"
         }
       ],
       "answer": 3,
-      "explain": "歌詞：Knock knock, trick or treat? Who are you?（你是誰？）",
+      "explain": "歌詞第一段：Give me something good to eat. eat＝吃。",
       "n": 285,
       "id": "q285"
     },
     {
       "sec": "halloween",
       "type": "mc",
-      "prompt": "\"I'm a ______. I'm a little ghost.\"",
+      "prompt": "Which fruits are in the song?",
       "options": [
         {
-          "text": "ghost"
+          "text": "Apples, peaches, tangerines."
         },
         {
-          "text": "mummy"
+          "text": "Watermelons, apples, lemons."
         },
         {
-          "text": "witch"
+          "text": "Apples, bananas, grapes."
         },
         {
-          "text": "vampire"
+          "text": "Oranges, pears, peaches."
         }
       ],
       "answer": 0,
-      "explain": "歌詞：I'm a ghost. I'm a little ghost.",
+      "explain": "歌詞：Apples, peaches, tangerines.（蘋果、桃子、橘子）",
       "n": 286,
       "id": "q286"
     },
     {
       "sec": "halloween",
       "type": "mc",
-      "prompt": "\"I'm a witch. I'm a little ______.\"",
+      "prompt": "Which fruit is NOT in the song?",
       "options": [
         {
-          "text": "ghost"
+          "text": "Apples"
         },
         {
-          "text": "witch"
+          "text": "Bananas"
         },
         {
-          "text": "pirate"
+          "text": "Tangerines"
         },
         {
-          "text": "monster"
+          "text": "Peaches"
         }
       ],
       "answer": 1,
-      "explain": "歌詞：I'm a witch. I'm a little witch.",
+      "explain": "歌詞只提到 apples、peaches、tangerines，沒有 bananas。",
       "n": 287,
       "id": "q287"
     },
     {
       "sec": "halloween",
       "type": "mc",
-      "prompt": "Which character is NOT in the song?",
+      "prompt": "\"Apples, peaches, ______.\"",
       "options": [
         {
-          "text": "A witch"
+          "text": "potatoes"
         },
         {
-          "text": "A teacher"
+          "text": "tangerines"
         },
         {
-          "text": "A monster"
+          "text": "carrots"
         },
         {
-          "text": "A ghost"
+          "text": "tomatoes"
         }
       ],
       "answer": 1,
-      "explain": "歌曲裡有 ghost、witch、monster 等角色，沒有 teacher。",
+      "explain": "歌詞：Apples, peaches, tangerines. tangerines＝橘子。",
       "n": 288,
       "id": "q288"
     },
     {
       "sec": "halloween",
       "type": "mc",
-      "prompt": "\"Happy ______!\"",
+      "prompt": "In the second verse, what do they want to eat?",
       "options": [
         {
-          "text": "Halloween"
+          "text": "Something sweet."
         },
         {
-          "text": "Christmas"
+          "text": "Something hot."
         },
         {
-          "text": "New Year"
+          "text": "Something sour."
         },
         {
-          "text": "birthday"
+          "text": "Something cold."
         }
       ],
       "answer": 0,
-      "explain": "萬聖節說 Happy Halloween!",
+      "explain": "歌詞第二段：Give me something sweet to eat. sweet＝甜的。",
       "n": 289,
       "id": "q289"
     },
     {
       "sec": "halloween",
       "type": "mc",
-      "prompt": "What do children say at the door?",
+      "prompt": "Which sweet foods are in the song?",
       "options": [
+        {
+          "text": "Cake, ice cream, candy."
+        },
+        {
+          "text": "Cookies, pizza, jelly beans."
+        },
+        {
+          "text": "Cookies, chocolate, jelly beans."
+        },
+        {
+          "text": "Chocolate, apples, peaches."
+        }
+      ],
+      "answer": 2,
+      "explain": "歌詞：Cookies, chocolate, jelly beans.（餅乾、巧克力、軟糖豆）",
+      "n": 290,
+      "id": "q290"
+    },
+    {
+      "sec": "halloween",
+      "type": "mc",
+      "prompt": "Which one is NOT in the song?",
+      "options": [
+        {
+          "text": "Pizza"
+        },
+        {
+          "text": "Cookies"
+        },
+        {
+          "text": "Chocolate"
+        },
+        {
+          "text": "Jelly beans"
+        }
+      ],
+      "answer": 0,
+      "explain": "歌詞提到 cookies、chocolate、jelly beans，沒有 pizza。",
+      "n": 291,
+      "id": "q291"
+    },
+    {
+      "sec": "halloween",
+      "type": "mc",
+      "prompt": "\"Cookies, chocolate, ______ beans.\"",
+      "options": [
+        {
+          "text": "green"
+        },
+        {
+          "text": "jelly"
+        },
+        {
+          "text": "butter"
+        },
+        {
+          "text": "coffee"
+        }
+      ],
+      "answer": 1,
+      "explain": "歌詞：Cookies, chocolate, jelly beans. jelly beans＝軟糖豆。",
+      "n": 292,
+      "id": "q292"
+    },
+    {
+      "sec": "halloween",
+      "type": "mc",
+      "prompt": "What do they say at the end of each verse?",
+      "options": [
+        {
+          "text": "Happy New Year!"
+        },
         {
           "text": "Happy birthday!"
         },
         {
-          "text": "Good morning!"
+          "text": "Merry Christmas!"
         },
         {
-          "text": "Trick or treat!"
-        },
-        {
-          "text": "Thank you!"
+          "text": "Happy Halloween!"
         }
       ],
-      "answer": 2,
-      "explain": "萬聖節到別人家門口說 Trick or treat!",
-      "n": 290,
-      "id": "q290"
+      "answer": 3,
+      "explain": "兩段歌詞最後都唱 Happy Halloween!",
+      "n": 293,
+      "id": "q293"
     },
     {
       "sec": "halloween",
@@ -6710,227 +6779,133 @@ window.QUIZ_DATA = {
       "prompt": "What does \"trick or treat\" mean?",
       "options": [
         {
-          "text": "不給糖就搗蛋"
-        },
-        {
           "text": "聖誕快樂"
         },
         {
           "text": "生日快樂"
         },
         {
+          "text": "不給糖就搗蛋"
+        },
+        {
           "text": "新年快樂"
         }
       ],
-      "answer": 0,
-      "explain": "trick or treat＝不給糖就搗蛋。",
-      "n": 291,
-      "id": "q291"
-    },
-    {
-      "sec": "halloween",
-      "type": "mc",
-      "prompt": "Which one is a Halloween costume?",
-      "options": [
-        {
-          "text": "A doctor"
-        },
-        {
-          "text": "A vampire"
-        },
-        {
-          "text": "A baseball player"
-        },
-        {
-          "text": "A teacher"
-        }
-      ],
-      "answer": 1,
-      "explain": "vampire（吸血鬼）是萬聖節扮裝角色。",
-      "n": 292,
-      "id": "q292"
-    },
-    {
-      "sec": "halloween",
-      "type": "mc",
-      "prompt": "\"I'm a ______. I'm a little monster.\"",
-      "options": [
-        {
-          "text": "ghost"
-        },
-        {
-          "text": "witch"
-        },
-        {
-          "text": "mummy"
-        },
-        {
-          "text": "monster"
-        }
-      ],
-      "answer": 3,
-      "explain": "歌詞：I'm a monster. I'm a little monster.",
-      "n": 293,
-      "id": "q293"
-    },
-    {
-      "sec": "halloween",
-      "type": "mc",
-      "prompt": "What does a witch ride?",
-      "options": [
-        {
-          "text": "A bike"
-        },
-        {
-          "text": "A bus"
-        },
-        {
-          "text": "A broom"
-        },
-        {
-          "text": "A boat"
-        }
-      ],
       "answer": 2,
-      "explain": "女巫騎掃帚（broom）。",
+      "explain": "trick or treat＝不給糖就搗蛋。",
       "n": 294,
       "id": "q294"
     },
     {
       "sec": "halloween",
       "type": "mc",
-      "prompt": "Which is a Halloween symbol?",
+      "prompt": "Which word rhymes with \"eat\"?",
       "options": [
         {
-          "text": "A jack-o'-lantern"
+          "text": "sweet"
         },
         {
-          "text": "A Christmas tree"
+          "text": "apple"
         },
         {
-          "text": "A school bag"
+          "text": "cookie"
         },
         {
-          "text": "A birthday cake"
+          "text": "peach"
         }
       ],
       "answer": 0,
-      "explain": "jack-o'-lantern（南瓜燈）是萬聖節象徵。",
+      "explain": "eat /iːt/ 和 sweet /swiːt/ 押韻，尾音都是 /iːt/。",
       "n": 295,
       "id": "q295"
     },
     {
       "sec": "halloween",
       "type": "mc",
-      "prompt": "Complete: \"Knock knock, trick or ______?\"",
+      "prompt": "Which word rhymes with \"beans\"?",
       "options": [
         {
-          "text": "train"
+          "text": "apples"
         },
         {
-          "text": "trick"
+          "text": "chocolate"
         },
         {
-          "text": "tree"
+          "text": "cookies"
         },
         {
-          "text": "treat"
+          "text": "tangerines"
         }
       ],
       "answer": 3,
-      "explain": "歌詞：Knock knock, trick or treat?",
+      "explain": "beans /biːnz/ 和 tangerines /ˌtændʒəˈriːnz/ 尾音相同，都是 /iːnz/。",
       "n": 296,
       "id": "q296"
     },
     {
       "sec": "halloween",
-      "type": "mc",
-      "prompt": "\"I'm a ______. I'm a little mummy.\"",
-      "options": [
-        {
-          "text": "ghost"
-        },
-        {
-          "text": "witch"
-        },
-        {
-          "text": "monster"
-        },
-        {
-          "text": "mummy"
-        }
+      "type": "write",
+      "prompt": "填空：Trick or ______, trick or treat.",
+      "accept": [
+        "treat"
       ],
-      "answer": 3,
-      "explain": "歌詞：I'm a mummy. I'm a little mummy.",
+      "sample": "treat",
+      "explain": "歌詞：Trick or treat, trick or treat. treat＝招待、請客。",
+      "hint": "提示：trick or ______",
       "n": 297,
       "id": "q297"
     },
     {
       "sec": "halloween",
-      "type": "mc",
-      "prompt": "\"I'm a ______. I'm a little vampire.\"",
-      "options": [
-        {
-          "text": "witch"
-        },
-        {
-          "text": "vampire"
-        },
-        {
-          "text": "ghost"
-        },
-        {
-          "text": "mummy"
-        }
+      "type": "write",
+      "prompt": "填空：Cookies, chocolate, ______ beans.",
+      "accept": [
+        "jelly"
       ],
-      "answer": 1,
-      "explain": "歌詞：I'm a vampire. I'm a little vampire.",
+      "sample": "jelly",
+      "explain": "歌詞：Cookies, chocolate, jelly beans. jelly beans＝軟糖豆。",
+      "hint": "提示：jelly ______",
       "n": 298,
       "id": "q298"
     },
     {
       "sec": "halloween",
-      "type": "mc",
-      "prompt": "\"Who are you?\" 是什麼意思？",
-      "options": [
-        {
-          "text": "你幾歲？"
-        },
-        {
-          "text": "你要去哪裡？"
-        },
-        {
-          "text": "你最喜歡什麼？"
-        },
-        {
-          "text": "你是誰？"
-        }
+      "type": "write",
+      "prompt": "寫出歌詞中提到的三種水果。",
+      "accept": [
+        "apples, peaches, tangerines",
+        "apples peaches tangerines",
+        "apples, peaches and tangerines",
+        "apples peaches and tangerines",
+        "apples, peaches, and tangerines",
+        "apples and peaches and tangerines",
+        "apple, peach, tangerine",
+        "apple peach tangerine",
+        "apple and peach and tangerine"
       ],
-      "answer": 3,
-      "explain": "Who are you?＝你是誰？歌詞用這句問扮裝的角色。",
+      "sample": "apples, peaches, tangerines",
+      "explain": "歌詞水果：apples（蘋果）、peaches（桃子）、tangerines（橘子）。",
       "n": 299,
       "id": "q299"
     },
     {
       "sec": "halloween",
-      "type": "mc",
-      "prompt": "拿到糖果時，最有禮貌的說法是？",
-      "options": [
-        {
-          "text": "Trick or treat!"
-        },
-        {
-          "text": "Knock knock!"
-        },
-        {
-          "text": "Happy Halloween!"
-        },
-        {
-          "text": "Thank you!"
-        }
+      "type": "write",
+      "prompt": "寫出歌詞中提到的三種甜食。",
+      "accept": [
+        "cookies, chocolate, jelly beans",
+        "cookies chocolate jelly beans",
+        "cookies, chocolate and jelly beans",
+        "cookies chocolate and jelly beans",
+        "cookies, chocolate, and jelly beans",
+        "cookies and chocolate and jelly beans",
+        "cookie, chocolate, jelly bean",
+        "cookie chocolate jelly bean",
+        "cookie and chocolate and jelly bean",
+        "cookies chocolate jellybeans"
       ],
-      "answer": 3,
-      "explain": "拿到糖果要說 Thank you!（謝謝）。",
+      "sample": "cookies, chocolate, jelly beans",
+      "explain": "歌詞甜食：cookies（餅乾）、chocolate（巧克力）、jelly beans（軟糖豆）。",
       "n": 300,
       "id": "q300"
     }

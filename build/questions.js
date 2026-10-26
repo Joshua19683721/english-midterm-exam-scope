@@ -85,8 +85,8 @@ const SECTIONS = [
     en: "Halloween Song",
     icon: "🎃",
     pct: "6%",
-    note: "Knock knock, trick or treat? Who are you? I'm a ghost. I'm a little ghost. ... Happy Halloween!",
-    desc: "萬聖節歌曲 Trick or Treat 的歌詞與單字選擇題。"
+    note: "歌詞有兩段：第一段想要 something good to eat（好吃的東西），第二段想要 something sweet to eat（甜的東西）。注意水果與甜食單字。",
+    desc: "Trick or Treat 歌詞：水果、甜食、歌詞填空與押韻。"
   }
 ];
 
@@ -538,23 +538,21 @@ add(mc("reading", "Which word means 「甚至」？", ["even", "dream", "band", 
 /* ============================================================
    8. 萬聖節歌詞（16 題）
    ============================================================ */
-add(mc("halloween", "\"Knock knock, trick or treat? ______ are you?\"", ["Who", "What", "Where", "How"], 0, "歌詞：Knock knock, trick or treat? Who are you?（你是誰？）"));
-add(mc("halloween", "\"I'm a ______. I'm a little ghost.\"", ["ghost", "witch", "vampire", "mummy"], 0, "歌詞：I'm a ghost. I'm a little ghost."));
-add(mc("halloween", "\"I'm a witch. I'm a little ______.\"", ["witch", "ghost", "monster", "pirate"], 0, "歌詞：I'm a witch. I'm a little witch."));
-add(mc("halloween", "Which character is NOT in the song?", ["A teacher", "A ghost", "A witch", "A monster"], 0, "歌曲裡有 ghost、witch、monster 等角色，沒有 teacher。"));
-add(mc("halloween", "\"Happy ______!\"", ["Halloween", "Christmas", "birthday", "New Year"], 0, "萬聖節說 Happy Halloween!"));
-add(mc("halloween", "What do children say at the door?", ["Trick or treat!", "Happy birthday!", "Good morning!", "Thank you!"], 0, "萬聖節到別人家門口說 Trick or treat!"));
+add(mc("halloween", "\"Trick or treat, trick or treat, give me something good to ______.\"", ["eat", "drink", "read", "play"], 0, "歌詞第一段：Give me something good to eat. eat＝吃。"));
+add(mc("halloween", "Which fruits are in the song?", ["Apples, peaches, tangerines.", "Apples, bananas, grapes.", "Oranges, pears, peaches.", "Watermelons, apples, lemons."], 0, "歌詞：Apples, peaches, tangerines.（蘋果、桃子、橘子）"));
+add(mc("halloween", "Which fruit is NOT in the song?", ["Bananas", "Apples", "Peaches", "Tangerines"], 0, "歌詞只提到 apples、peaches、tangerines，沒有 bananas。"));
+add(mc("halloween", "\"Apples, peaches, ______.\"", ["tangerines", "tomatoes", "potatoes", "carrots"], 0, "歌詞：Apples, peaches, tangerines. tangerines＝橘子。"));
+add(mc("halloween", "In the second verse, what do they want to eat?", ["Something sweet.", "Something hot.", "Something cold.", "Something sour."], 0, "歌詞第二段：Give me something sweet to eat. sweet＝甜的。"));
+add(mc("halloween", "Which sweet foods are in the song?", ["Cookies, chocolate, jelly beans.", "Cake, ice cream, candy.", "Cookies, pizza, jelly beans.", "Chocolate, apples, peaches."], 0, "歌詞：Cookies, chocolate, jelly beans.（餅乾、巧克力、軟糖豆）"));
+add(mc("halloween", "Which one is NOT in the song?", ["Pizza", "Cookies", "Chocolate", "Jelly beans"], 0, "歌詞提到 cookies、chocolate、jelly beans，沒有 pizza。"));
+add(mc("halloween", "\"Cookies, chocolate, ______ beans.\"", ["jelly", "coffee", "green", "butter"], 0, "歌詞：Cookies, chocolate, jelly beans. jelly beans＝軟糖豆。"));
+add(mc("halloween", "What do they say at the end of each verse?", ["Happy Halloween!", "Merry Christmas!", "Happy birthday!", "Happy New Year!"], 0, "兩段歌詞最後都唱 Happy Halloween!"));
 add(mc("halloween", "What does \"trick or treat\" mean?", ["不給糖就搗蛋", "聖誕快樂", "生日快樂", "新年快樂"], 0, "trick or treat＝不給糖就搗蛋。"));
-add(mc("halloween", "Which one is a Halloween costume?", ["A vampire", "A teacher", "A doctor", "A baseball player"], 0, "vampire（吸血鬼）是萬聖節扮裝角色。"));
-add(mc("halloween", "\"I'm a ______. I'm a little monster.\"", ["monster", "mummy", "witch", "ghost"], 0, "歌詞：I'm a monster. I'm a little monster."));
-add(mc("halloween", "What does a witch ride?", ["A broom", "A bike", "A bus", "A boat"], 0, "女巫騎掃帚（broom）。"));
-add(mc("halloween", "Which is a Halloween symbol?", ["A jack-o'-lantern", "A Christmas tree", "A birthday cake", "A school bag"], 0, "jack-o'-lantern（南瓜燈）是萬聖節象徵。"));
-add(mc("halloween", "Complete: \"Knock knock, trick or ______?\"", ["treat", "tree", "train", "trick"], 0, "歌詞：Knock knock, trick or treat?"));
-
-/* 追加 4 題（總計 16） */
-add(mc("halloween", "\"I'm a ______. I'm a little mummy.\"", ["mummy", "witch", "ghost", "monster"], 0, "歌詞：I'm a mummy. I'm a little mummy."));
-add(mc("halloween", "\"I'm a ______. I'm a little vampire.\"", ["vampire", "mummy", "witch", "ghost"], 0, "歌詞：I'm a vampire. I'm a little vampire."));
-add(mc("halloween", "\"Who are you?\" 是什麼意思？", ["你是誰？", "你要去哪裡？", "你幾歲？", "你最喜歡什麼？"], 0, "Who are you?＝你是誰？歌詞用這句問扮裝的角色。"));
-add(mc("halloween", "拿到糖果時，最有禮貌的說法是？", ["Thank you!", "Trick or treat!", "Happy Halloween!", "Knock knock!"], 0, "拿到糖果要說 Thank you!（謝謝）。"));
+add(mc("halloween", "Which word rhymes with \"eat\"?", ["sweet", "apple", "peach", "cookie"], 0, "eat /iːt/ 和 sweet /swiːt/ 押韻，尾音都是 /iːt/。"));
+add(mc("halloween", "Which word rhymes with \"beans\"?", ["tangerines", "cookies", "apples", "chocolate"], 0, "beans /biːnz/ 和 tangerines /ˌtændʒəˈriːnz/ 尾音相同，都是 /iːnz/。"));
+add(writeQ("halloween", "填空：Trick or ______, trick or treat.", ["treat"], "treat", "歌詞：Trick or treat, trick or treat. treat＝招待、請客。", { hint: "提示：trick or ______" }));
+add(writeQ("halloween", "填空：Cookies, chocolate, ______ beans.", ["jelly"], "jelly", "歌詞：Cookies, chocolate, jelly beans. jelly beans＝軟糖豆。", { hint: "提示：jelly ______" }));
+add(writeQ("halloween", "寫出歌詞中提到的三種水果。", ["apples, peaches, tangerines", "apples peaches tangerines", "apples, peaches and tangerines", "apples peaches and tangerines", "apples, peaches, and tangerines", "apples and peaches and tangerines", "apple, peach, tangerine", "apple peach tangerine", "apple and peach and tangerine"], "apples, peaches, tangerines", "歌詞水果：apples（蘋果）、peaches（桃子）、tangerines（橘子）。"));
+add(writeQ("halloween", "寫出歌詞中提到的三種甜食。", ["cookies, chocolate, jelly beans", "cookies chocolate jelly beans", "cookies, chocolate and jelly beans", "cookies chocolate and jelly beans", "cookies, chocolate, and jelly beans", "cookies and chocolate and jelly beans", "cookie, chocolate, jelly bean", "cookie chocolate jelly bean", "cookie and chocolate and jelly bean", "cookies chocolate jellybeans"], "cookies, chocolate, jelly beans", "歌詞甜食：cookies（餅乾）、chocolate（巧克力）、jelly beans（軟糖豆）。"));
 
 module.exports = { SECTIONS, QUESTIONS };
