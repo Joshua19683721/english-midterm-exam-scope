@@ -3312,8 +3312,8 @@ window.QUIZ_DATA = {
       "accept": [
         "ghost"
       ],
-      "sample": "I'm a little ghost.",
-      "explain": "ghost（鬼）・gh 發 /g/<br>例：I'm a little ghost.",
+      "sample": "The ghost is white.",
+      "explain": "ghost（鬼）・gh 發 /g/<br>例：The ghost is white.",
       "n": 140,
       "id": "q140",
       "audioFile": "assets/audio/a_35bc6e8ec213.mp3"
@@ -3329,8 +3329,8 @@ window.QUIZ_DATA = {
       "accept": [
         "witch"
       ],
-      "sample": "I'm a little witch.",
-      "explain": "witch（女巫）・tch 發 /tʃ/<br>例：I'm a little witch.",
+      "sample": "The witch has a black hat.",
+      "explain": "witch（女巫）・tch 發 /tʃ/<br>例：The witch has a black hat.",
       "n": 141,
       "id": "q141",
       "audioFile": "assets/audio/a_f19aa29a74a5.mp3"
@@ -3346,8 +3346,8 @@ window.QUIZ_DATA = {
       "accept": [
         "mummy"
       ],
-      "sample": "I'm a little mummy.",
-      "explain": "mummy（木乃伊）・兩個 m<br>例：I'm a little mummy.",
+      "sample": "The mummy is old.",
+      "explain": "mummy（木乃伊）・兩個 m<br>例：The mummy is old.",
       "n": 142,
       "id": "q142",
       "audioFile": "assets/audio/a_b811db22ba7e.mp3"
@@ -3363,8 +3363,8 @@ window.QUIZ_DATA = {
       "accept": [
         "vampire"
       ],
-      "sample": "I'm a little vampire.",
-      "explain": "vampire（吸血鬼）・v-a-m-p-i-r-e<br>例：I'm a little vampire.",
+      "sample": "I see a vampire.",
+      "explain": "vampire（吸血鬼）・v-a-m-p-i-r-e<br>例：I see a vampire.",
       "n": 143,
       "id": "q143",
       "audioFile": "assets/audio/a_6f02527d09d3.mp3"

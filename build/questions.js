@@ -348,10 +348,10 @@ add(spell("windy", "颳風的", "It's windy outside.", "wind + y"));
 add(spell("weather", "天氣", "How's the weather today?", "ea 發 /e/"));
 add(spell("morning", "早上", "I get up at seven in the morning.", "morn + ing"));
 add(spell("evening", "傍晚；晚上", "We take a walk in the evening.", "e-v-e-n-i-n-g"));
-add(spell("ghost", "鬼", "I'm a little ghost.", "gh 發 /g/"));
-add(spell("witch", "女巫", "I'm a little witch.", "tch 發 /tʃ/"));
-add(spell("mummy", "木乃伊", "I'm a little mummy.", "兩個 m"));
-add(spell("vampire", "吸血鬼", "I'm a little vampire.", "v-a-m-p-i-r-e"));
+add(spell("ghost", "鬼", "The ghost is white.", "gh 發 /g/"));
+add(spell("witch", "女巫", "The witch has a black hat.", "tch 發 /tʃ/"));
+add(spell("mummy", "木乃伊", "The mummy is old.", "兩個 m"));
+add(spell("vampire", "吸血鬼", "I see a vampire.", "v-a-m-p-i-r-e"));
 add(spell("candy", "糖果", "Trick or treat! Give me candy.", "c + and + y"));
 
 /* ============================================================
